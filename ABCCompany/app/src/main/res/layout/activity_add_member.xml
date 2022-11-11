@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    app:layout_anchorGravity="center"
+    android:background="@drawable/blogin"
+    tools:context=".addMember">
+
+
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Add User"
+        android:textAlignment="center"
+        android:textSize="45dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_below="@id/textView"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Please Enter User Details"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <Spinner
+        android:layout_below="@id/textView2"
+        android:id="@+id/spinner1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:textAlignment="center"
+        android:background="@color/white"
+        android:spinnerMode="dialog"
+        android:outlineAmbientShadowColor="@color/black"/>
+
+
+    <EditText
+        android:layout_below="@id/spinner1"
+        android:id="@+id/userName"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="User Name"
+        android:text=""
+        />
+
+    <EditText
+        android:layout_below="@+id/userName"
+        android:id="@+id/password"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Password"
+        android:text="" />
+
+
+    <Button
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="100dp"
+        android:foregroundGravity="center"
+        android:text="Add Member"
+        android:onClick="addMember"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_below="@id/imageView4"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="100dp"
+        android:foregroundGravity="center"
+        android:text="Home"
+        android:onClick="home"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+</RelativeLayout>
